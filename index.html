@@ -46,7 +46,10 @@
         function setVolume(volume) {
           audioPlayer.volume = volume;
         }
+
       </script>
+
+    <button class="animated-button">Cool button that only works on desktop</button>
     
     <div id = "pets_list">
         <a href = "#main" > Bacon Q Dog</a> 
@@ -62,6 +65,7 @@
     <main id = "main"><div> <!--Pet #1-->
         <h2>Bacon Q Dog</h2>
         <img id = "main_pic" src="images/bacon.jpg" width="400" alt= "Brown labradoodle wearing colorful lei">
+        
         <p>
             Bacon Q. Dog is a 9yr old labradoodle.  He prefers to spend his days lounging among the three different beds/couches that his family has gifted him.  He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.
         </p>
@@ -223,4 +227,30 @@
 
 
 </div>
+
+<script>
+    function doSomethingOnSmallScreen() {
+      
+      console.log("Mobile/tablet screen action executed!");
+    }
+
+    function doSomethingOnLargeScreen() {
+      
+      console.log("Desktop screen action executed!");
+    }
+
+    
+    function checkScreenSize() {
+      if (window.innerWidth <= 1250) { 
+        doSomethingOnSmallScreen();
+      } else {
+        doSomethingOnLargeScreen();
+      }
+    }
+
+    checkScreenSize();
+
+</script>
+
+
 </html>
