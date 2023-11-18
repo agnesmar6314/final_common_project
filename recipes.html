@@ -28,7 +28,7 @@
     <i class="material-icons">favorite</i>
     <i class="material-icons">star</i>
     <audio id="audioPlayer" controls>
-        <source src="Houndmouth - Sedona.mp3" type="audio/mp3">
+        <source src="Houndmouth-Sedona.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
 
@@ -68,7 +68,7 @@
         <span>Source: Family Recipe</span>
         <span>Category: Dessert</span>
 
-        <img src="images/double_chocolate_cookies.png" width = "400" alt="">
+        <img class = "main_pic" src="images/double_chocolate_cookies.png" width = "400" alt="">
         <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
         <h3>Recipe Ingredients</h3>
         <ul>
@@ -108,7 +108,7 @@
     </div>
     <div id = "pet_2">
         <h2>Shrimp Scampi</h2>
-        <img src="images/shrimp_scampi.jpg" alt ="Shrimp scampi is a classic Italian-American delight, where succulent shrimp meet a medley of garlic, butter, and white wine. Sautéed to pink perfection, the shrimp mingle with a fragrant blend of garlic and red pepper flakes. A drizzle of white wine and a squeeze of lemon create a luxurious sauce, embracing the dish's linguine base. With a sprinkle of parsley, it's a harmonious, flavorful masterpiece that exemplifies both simplicity and taste.
+        <img class = "main_pic" src="images/shrimp_scampi.jpg" alt ="Shrimp scampi is a classic Italian-American delight, where succulent shrimp meet a medley of garlic, butter, and white wine. Sautéed to pink perfection, the shrimp mingle with a fragrant blend of garlic and red pepper flakes. A drizzle of white wine and a squeeze of lemon create a luxurious sauce, embracing the dish's linguine base. With a sprinkle of parsley, it's a harmonious, flavorful masterpiece that exemplifies both simplicity and taste.
         "/>
         <p> Recipe Ingredients </p>
         <p> 2 tablespoons butter
@@ -145,7 +145,7 @@
         <span><span>Origin: American</span></span>
         <span>Source: Family Recipe</span>
         <span>Category: Dessert</span>
-        <img src="images/BrowniesPrimaryImage.jpg" width="400" alt="Finished brownies in a pan.">
+        <img class = "main_pic" src="images/BrowniesPrimaryImage.jpg" width="400" alt="Finished brownies in a pan.">
         <p>On weekends, when I was younger, my mom and I would make these brownies together. They were always my favorite dessert and I still make them to this day, but my mom still makes them the best. My favorite part about them is that they are so easy to make! </p>
         <h3>Recipe Ingredients:</h3>
 
@@ -178,31 +178,31 @@
 <div></div>
 <div></div>
 
-</main>    
+</main>  
+<script>
+  function doSomethingOnSmallScreen() {
+    
+    console.log("Mobile/tablet screen action executed!");
+  }
+
+  function doSomethingOnLargeScreen() {
+    
+    console.log("Desktop screen action executed!");
+  }
+
+  
+  function checkScreenSize() {
+    if (window.innerWidth <= 1250) { 
+      doSomethingOnSmallScreen();
+    } else {
+      doSomethingOnLargeScreen();
+    }
+  }
+
+  checkScreenSize();
+</script>  
 </body>
 
-<script>
-    function doSomethingOnSmallScreen() {
-      
-      console.log("Mobile/tablet screen action executed!");
-    }
 
-    function doSomethingOnLargeScreen() {
-      
-      console.log("Desktop screen action executed!");
-    }
-
-    
-    function checkScreenSize() {
-      if (window.innerWidth <= 1250) { 
-        doSomethingOnSmallScreen();
-      } else {
-        doSomethingOnLargeScreen();
-      }
-    }
-
-    checkScreenSize();
-
-</script>
 
 </html>

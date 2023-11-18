@@ -25,7 +25,7 @@
     <i class="material-icons">favorite</i>
     <i class="material-icons">star</i>
     <audio id="audioPlayer" controls>
-        <source src="Houndmouth - Sedona.mp3" type="audio/mp3">
+        <source src="Houndmouth-Sedona.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
 
@@ -64,7 +64,7 @@
 
     <main id = "main"><div> <!--Pet #1-->
         <h2>Bacon Q Dog</h2>
-        <img id = "main_pic" src="images/bacon.jpg" width="400" alt= "Brown labradoodle wearing colorful lei">
+        <img class = "main_pic" src="images/bacon.jpg" width="400" alt= "Brown labradoodle wearing colorful lei">
         
         <p>
             Bacon Q. Dog is a 9yr old labradoodle.  He prefers to spend his days lounging among the three different beds/couches that his family has gifted him.  He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.
@@ -99,7 +99,7 @@
     </div>
     <div id = "pet_2"> <!--Pet #2-->
         <h2>Cheeto (Chicken)</h2>
-        <img id = "main_pic" src="images/cheeto_cattree.jpg" width="400" alt= "Orange cat hanging paws off a cat tower">
+        <img class = "main_pic" src="images/cheeto_cattree.jpg" width="400" alt= "Orange cat hanging paws off a cat tower">
         <p>
             Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get outside every single day. If he isn’t causing problems, he is usually hiding in a seven foot tall cat tree and sleeping. 
         </p>
@@ -123,7 +123,7 @@
     </div>
     <div id = "pet_3"> <!--Pet #3-->
         <h2>Milktea</h2>
-        <img id = "main_pic" src="images/Milktea_comfy.jpg" width="400" alt= "Milktea taking nap">
+        <img class = "main_pic" src="images/Milktea_comfy.jpg" width="400" alt= "Milktea taking nap">
         <p>
             Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses to eat anything dropped on the ground. She makes it clear when she has a demand of any sort by complaining in a loud, distinguished manner. If what she says could be translated, it probably would be, “This is atrocious, the water container has been empty for the 3rd time this week. I want to see the manager.”
 
@@ -152,7 +152,7 @@
      
             <h2> Finn </h2> 
 
-       <img id = "main_pic" src ="images/Finn_Halloween.jpg" width = "400" alt = "Finn wears a bat costume for halloween"> 
+       <img class = "main_pic" src ="images/Finn_Halloween.jpg" width = "400" alt = "Finn wears a bat costume for halloween"> 
        
        <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go with grey. He loves doing tricks for treats and his favorite is giving high fives to people. He might as well be a dog as he loves the outdoors and meeting new people. I can only describe him as goofy and chaotic. </p>
        <p>Finn’s biggest enemy is his vet. I don't know whether or not it’s because his vet is an MSU alum, but he doesn’t like him. He actually has to be prescribed a sedative before he goes to the vet office because he’ll suddenly act like he was never a house cat for 7 years.</p> 
@@ -186,7 +186,7 @@
     </div>
     <div id = "pet_5"> <!--Pet #5-->
         <h2>Jax</h2>
-        <img id = "main_pic" src="images/Jax.jpg" width="400" alt= "A black and white kitten sitting down and wearing a yellow collar.
+        <img class = "main_pic" src="images/Jax.jpg" width="400" alt= "A black and white kitten sitting down and wearing a yellow collar.
         ">
         <p>
             Jax is a kitten, about five months old that I found this summer at a gas station while traveling to Marquette, Michigan. He was scared and malnourished, crying in the parking lot. I took him with me and after some healthy meals and a trip to the vet he is doing great!
@@ -222,35 +222,33 @@
         </ul>
         <!--Grace Jermstad-->
     </div></main>
+
+    <script>
+        function doSomethingOnSmallScreen() {
+          
+          console.log("Mobile/tablet screen action executed!");
+        }
     
+        function doSomethingOnLargeScreen() {
+          
+          console.log("Desktop screen action executed!");
+        }
+    
+        
+        function checkScreenSize() {
+          if (window.innerWidth <= 1250) { 
+            doSomethingOnSmallScreen();
+          } else {
+            doSomethingOnLargeScreen();
+          }
+        }
+    
+        checkScreenSize();
+    
+    </script>
 </body>
 
 
-</div>
-
-<script>
-    function doSomethingOnSmallScreen() {
-      
-      console.log("Mobile/tablet screen action executed!");
-    }
-
-    function doSomethingOnLargeScreen() {
-      
-      console.log("Desktop screen action executed!");
-    }
-
-    
-    function checkScreenSize() {
-      if (window.innerWidth <= 1250) { 
-        doSomethingOnSmallScreen();
-      } else {
-        doSomethingOnLargeScreen();
-      }
-    }
-
-    checkScreenSize();
-
-</script>
 
 
 </html>

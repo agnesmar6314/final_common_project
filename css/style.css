@@ -54,7 +54,7 @@ video {
 }
 
 @keyframes example {
-    from {background-color: pink;}
+    from {background-color:#6a3d52;}
     to {background-color: #0461cf;}
   }
 
@@ -181,7 +181,7 @@ a.skip-main:focus, a.skip-main:active {
 
     
 
-    #main_pic {
+    .main_pic {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -214,14 +214,22 @@ a.skip-main:focus, a.skip-main:active {
         font-family: "Sofia", sans-serif;
     }
 
-    h1 {
-        animation-name: example;
-        animation-duration: 4s;
-    }
+   
 
     #pets_list {
 
         background-image: url("images/navy-blue-color-solid-background-1920x1080.png");
+
+    }
+
+    .main_pic {
+        animation-name: example;
+        animation-duration: 4s;
+    }
+
+    .animation {
+        animation-name: example;
+        animation-duration: 4s;
 
     }
 
